@@ -1,0 +1,8 @@
+<h1>Game1</h1>
+<p><%= @letters %></p>
+<br>
+<form action="/score" id="score-form">
+  <%= hidden_field_tag :letters, @letters %>
+  <input type="text" name='guess'>
+  <input type="submit" value='Enter!'>
+</form>
